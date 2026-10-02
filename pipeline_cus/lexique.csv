@@ -1,0 +1,189 @@
+﻿regle;motif;type;commentaire
+AMB-01;\b(?:shall|must|should|will|may|can)\s+(?:not\s+)?be\s+(?:\w+ed|sent|built|made|kept|held|set|put|done|shown|given|taken|fitted|fed|met|run|laid|paid|sold|told|found|brought|left|lost|spent|hung|won|worn|drawn|grown|known|chosen|frozen|spoken|broken|hidden|written|driven|read|cut|shut|split|spread)\b;regex;voix passive
+AMB-01;\b(?:when|if|upon|once)\s+(?:requested|required|approved|activated|commanded|selected|needed|demanded|authori[sz]ed|triggered|initiated)\b;regex;condition sans acteur
+AMB-02;easy;mot;terme vague
+AMB-02;easily;mot;terme vague
+AMB-02;user-friendly;mot;terme vague
+AMB-02;user friendly;mot;terme vague
+AMB-02;adequate;mot;terme vague
+AMB-02;adequately;mot;terme vague
+AMB-02;appropriate;mot;terme vague
+AMB-02;appropriately;mot;terme vague
+AMB-02;sufficient;mot;terme vague
+AMB-02;sufficiently;mot;terme vague
+AMB-02;suitable;mot;terme vague
+AMB-02;suitably;mot;terme vague
+AMB-02;reasonable;mot;terme vague
+AMB-02;reasonably;mot;terme vague
+AMB-02;normal;mot;terme vague
+AMB-02;normally;mot;terme vague
+AMB-02;proper;mot;terme vague
+AMB-02;properly;mot;terme vague
+AMB-02;acceptable;mot;terme vague
+AMB-02;good;mot;terme vague
+AMB-02;fast;mot;terme vague
+AMB-02;quick;mot;terme vague
+AMB-02;quickly;mot;terme vague
+AMB-02;rapid;mot;terme vague
+AMB-02;rapidly;mot;terme vague
+AMB-02;slow;mot;terme vague
+AMB-02;robust;mot;terme vague
+AMB-02;flexible;mot;terme vague
+AMB-02;efficient;mot;terme vague
+AMB-02;efficiently;mot;terme vague
+AMB-02;effective;mot;terme vague
+AMB-02;effectively;mot;terme vague
+AMB-02;reliable;mot;terme vague
+AMB-02;comfortable;mot;terme vague
+AMB-02;minimal;mot;terme vague
+AMB-02;significant;mot;terme vague
+AMB-02;significantly;mot;terme vague
+AMB-02;high;mot;terme vague
+AMB-02;low;mot;terme vague
+AMB-02;large;mot;terme vague
+AMB-02;small;mot;terme vague
+AMB-02;compatible;mot;terme vague
+AMB-02;state-of-the-art;mot;terme vague
+AMB-02;modern;mot;terme vague
+AMB-03;^\s*(?:a|an)\s+\w+;regex;article indéfini en début de phrase
+AMB-04;it;mot;référence floue
+AMB-04;its;mot;référence floue
+AMB-04;they;mot;référence floue
+AMB-04;them;mot;référence floue
+AMB-04;their;mot;référence floue
+AMB-04;these;mot;référence floue
+AMB-04;those;mot;référence floue
+AMB-04;the former;mot;référence floue
+AMB-04;the latter;mot;référence floue
+AMB-04;and/or;mot;référence floue
+AMB-04;\bthis\b(?!\s+(?:requirement|specification|section|document|clause|chapter));regex;this sans nom
+AMB-04;\bsuch\b(?!\s+as\b);regex;such sans 'as'
+AMB-04;\b[A-Za-z]{4,}/[A-Za-z]{4,}\b;regex;barre oblique entre deux mots (pas km/h)
+VER-01;as soon as possible;mot;pas de critère mesurable
+VER-01;\b(?:minimi[sz]|maximi[sz]|optimi[sz])(?:e|ed|es|ing|ation)\b;regex;minimiser / maximiser / optimiser
+VER-01;\b(?:reduc(?:e|ed|es|ing)|improv(?:e|ed|es|ing))\b;regex;réduire / améliorer sans cible
+VER-01;\bas\s+\w+\s+as\s+possible\b;regex;as ... as possible
+VER-01;\bshall\s+be\s+(?:quiet|reliable|comfortable|safe|durable|maintainable|secure|accessible|visible|audible|clean)\b;regex;qualité sans valeur
+VER-02;\b(?:shall|must)\s+not\b(?!\s+(?:exceed|be\s+(?:less|more|greater|lower|higher|above|below)));regex;négation
+VER-02;shall never;mot;négation
+VER-02;must never;mot;négation
+VER-02;free of;mot;négation
+VER-02;without any;mot;négation
+VER-02;\bno\s+\w+(?:\s+\w+)?\s+shall\b;regex;no X shall
+VER-03;always;mot;absolu
+VER-03;never;mot;absolu
+VER-03;all;mot;absolu
+VER-03;every;mot;absolu
+VER-03;any;mot;absolu
+VER-03;zero;mot;absolu
+VER-03;at all times;mot;absolu
+VER-03;under all conditions;mot;absolu
+VER-03;in any case;mot;absolu
+VER-03;in all cases;mot;absolu
+VER-03;completely;mot;absolu
+VER-03;fully;mot;absolu
+VER-03;totally;mot;absolu
+VER-03;entirely;mot;absolu
+VER-03;\b100\s?%;regex;100 %
+VER-04;maximum;mot;limite
+VER-04;minimum;mot;limite
+VER-04;up to;mot;limite
+VER-04;at least;mot;limite
+VER-04;at most;mot;limite
+VER-04;not more than;mot;limite
+VER-04;no more than;mot;limite
+VER-04;not less than;mot;limite
+VER-04;no less than;mot;limite
+VER-04;shall not exceed;mot;limite
+VER-04;must not exceed;mot;limite
+VER-04;\bshall\s+not\s+be\s+(?:less|more|greater|lower|higher|above|below)\s+than\b;regex;limite négative
+VER-04;\bbetween\s+\S+\s+(?:\S+\s+)?and\b;regex;intervalle : bornes incluses ?
+RSK-01;if possible;mot;clause échappatoire
+RSK-01;where possible;mot;clause échappatoire
+RSK-01;as far as possible;mot;clause échappatoire
+RSK-01;as far as practicable;mot;clause échappatoire
+RSK-01;where practicable;mot;clause échappatoire
+RSK-01;as far as reasonably practicable;mot;clause échappatoire
+RSK-01;where applicable;mot;clause échappatoire
+RSK-01;if applicable;mot;clause échappatoire
+RSK-01;if necessary;mot;clause échappatoire
+RSK-01;where necessary;mot;clause échappatoire
+RSK-01;as appropriate;mot;clause échappatoire
+RSK-01;as required;mot;clause échappatoire
+RSK-01;as needed;mot;clause échappatoire
+RSK-01;when feasible;mot;clause échappatoire
+RSK-01;where feasible;mot;clause échappatoire
+RSK-01;to the extent possible;mot;clause échappatoire
+RSK-01;if practicable;mot;clause échappatoire
+RSK-02;\betc\b\.?;regex;etc.
+RSK-02;and so on;mot;liste ouverte
+RSK-02;and so forth;mot;liste ouverte
+RSK-02;including but not limited to;mot;liste ouverte
+RSK-02;including without limitation;mot;liste ouverte
+RSK-02;among others;mot;liste ouverte
+RSK-02;or similar;mot;liste ouverte
+RSK-02;or equivalent;mot;liste ouverte
+RSK-02;such as;mot;liste ouverte
+RSK-02;for example;mot;liste ouverte
+RSK-02;e.g.;mot;liste ouverte
+RSK-02;including;mot;liste ouverte
+RSK-03;\b(?:TBD|TBC|TBA|TBS)\b;regex_casse;placeholder
+RSK-03;\bto\s+be\s+(?:defined|confirmed|agreed|specified|advised|determined|decided)\b;regex;à définir
+RSK-03;\[\s*[xX]+\s*\]|\bXX+\b|\?{2,};regex_casse;valeur manquante
+RSK-04;should;mot;statut contraignant ?
+RSK-04;may;mot;statut contraignant ?
+RSK-04;can;mot;statut contraignant ?
+RSK-04;could;mot;statut contraignant ?
+RSK-04;might;mot;statut contraignant ?
+RSK-04;will;mot;statut contraignant ?
+RSK-04;would;mot;statut contraignant ?
+RSK-04;is expected to;mot;statut contraignant ?
+RSK-04;is recommended;mot;statut contraignant ?
+RSK-04;preferably;mot;statut contraignant ?
+RSK-04;ideally;mot;statut contraignant ?
+RSK-04;aucun_shall;special;aucun shall/must dans le texte
+RSK-05;plusieurs_shall;special;2 shall/must ou plus
+RSK-05;as well as;mot;plusieurs idées ?
+RSK-05;in addition;mot;plusieurs idées ?
+RSK-05;and then;mot;plusieurs idées ?
+RSK-05;and also;mot;plusieurs idées ?
+RSK-05;";";regex;point-virgule
+RSK-06;applicable standards;mot;référence générique
+RSK-06;applicable standard;mot;référence générique
+RSK-06;relevant standards;mot;référence générique
+RSK-06;current standards;mot;référence générique
+RSK-06;applicable regulations;mot;référence générique
+RSK-06;relevant regulations;mot;référence générique
+RSK-06;current regulations;mot;référence générique
+RSK-06;applicable laws;mot;référence générique
+RSK-06;industry standards;mot;référence générique
+RSK-06;best practice;mot;référence générique
+RSK-06;best practices;mot;référence générique
+RSK-06;good engineering practice;mot;référence générique
+RSK-06;good industry practice;mot;référence générique
+RSK-06;state of the art;mot;référence générique
+RSK-06;\b(?:EN|IEC|ISO|NF|UIC|IEEE|BS|DIN|CEI|CENELEC)\s?(?:[A-Z]{1,3}\s?)?\d{2,6}(?:-\d+)*(?![\d-])(?!\s*[:/]\s*\d{4})(?!\s*\(\s*\d{4});regex_casse;norme sans édition
+RSK-07;using;mot;solution imposée ?
+RSK-07;by means of;mot;solution imposée ?
+RSK-07;based on;mot;solution imposée ?
+RSK-07;through;mot;solution imposée ?
+RSK-07;via;mot;solution imposée ?
+STY-01;must;mot;impératif non conforme
+STY-01;is to;mot;impératif non conforme
+STY-01;are to;mot;impératif non conforme
+STY-01;has to;mot;impératif non conforme
+STY-01;have to;mot;impératif non conforme
+STY-01;needs to;mot;impératif non conforme
+STY-01;need to;mot;impératif non conforme
+STY-01;is required to;mot;impératif non conforme
+STY-01;are required to;mot;impératif non conforme
+STY-02;because;mot;justification dans le texte
+STY-02;since;mot;justification dans le texte
+STY-02;in order to;mot;justification dans le texte
+STY-02;so that;mot;justification dans le texte
+STY-02;to allow;mot;justification dans le texte
+STY-02;to ensure;mot;justification dans le texte
+STY-02;for the purpose of;mot;justification dans le texte
+STY-02;i.e.;mot;justification dans le texte
+STY-02;which means;mot;justification dans le texte
+STY-03;\bwhen\b[^.]*\bgiven\b;regex;WHEN avant GIVEN

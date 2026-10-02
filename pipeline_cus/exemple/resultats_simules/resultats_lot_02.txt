@@ -1,0 +1,89 @@
+Voici les résultats du lot 2 :
+```json
+[
+ {
+  "ID": "CUS-012",
+  "Verdict": "A_CLARIFIER",
+  "Severity": "BLOQUANT",
+  "Rules": "RSK-01",
+  "Dismissed signals": "AMB-01",
+  "Excerpt": "where possible",
+  "Explication": "Clause échappatoire : l'obligation n'est pas définie.",
+  "Question client": "Could the Customer confirm whether obstacle detection is mandatory on the doors, or list the doors where it is not required?",
+  "Proposed wording": "The [TBC: list of doors] shall be fitted with obstacle detection.",
+  "Confidence": "Haute"
+ },
+ {
+  "ID": "CUS-013",
+  "Verdict": "A_CLARIFIER",
+  "Severity": "BLOQUANT",
+  "Rules": "RSK-02",
+  "Dismissed signals": "",
+  "Excerpt": "etc.",
+  "Explication": "Liste ouverte.",
+  "Question client": "Le client peut-il donner la liste complète des équipements de la cabine que le fournisseur doit installer ?",
+  "Proposed wording": "The cab shall include the driving controls, the displays, the radio and [TBC: other equipment].",
+  "Confidence": "Haute"
+ },
+ {
+  "ID": "CUS-014",
+  "Verdict": "A_CLARIFIER",
+  "Severity": "BLOQUANT",
+  "Rules": "RSK-03",
+  "Dismissed signals": "AMB-01",
+  "Excerpt": "TBD",
+  "Explication": "Valeur non définie.",
+  "Question client": "Could the Customer provide the required saloon temperature and its tolerance?",
+  "Proposed wording": "The HVAC system shall maintain the saloon temperature at [TBC: saloon temperature] °C.",
+  "Confidence": "Haute"
+ },
+ {
+  "ID": "CUS-015",
+  "Verdict": "A_CLARIFIER",
+  "Severity": "BLOQUANT",
+  "Rules": "VER-03",
+  "Dismissed signals": "",
+  "Excerpt": "always",
+  "Explication": "Absolu impossible à démontrer.",
+  "Question client": "Could the Customer specify the required availability of the passenger information system (target value and reference period)?",
+  "Proposed wording": "The passenger information system shall have an availability greater than or equal to [TBC: availability target] over [TBC: reference period].",
+  "Confidence": "Haute"
+ },
+ {
+  "ID": "CUS-016",
+  "Verdict": "A_CLARIFIER",
+  "Severity": "MAJEUR",
+  "Rules": "VER-04",
+  "Dismissed signals": "",
+  "Excerpt": "up to",
+  "Explication": "On ne sait pas si 300 est un minimum ou un maximum.",
+  "Question client": "Could the Customer confirm whether 300 passengers is the minimum capacity the train shall carry, and under which load condition?",
+  "Proposed wording": "The train shall have a capacity greater than or equal to 300 passengers under [TBC: load condition].",
+  "Confidence": "Moyenne"
+ },
+ {
+  "ID": "CUS-017",
+  "Verdict": "OK",
+  "Severity": "BLOQUANT",
+  "Rules": "RSK-06, VER-03",
+  "Dismissed signals": "",
+  "Excerpt": "all applicable standards",
+  "Explication": "Référence générique aux normes.",
+  "Question client": "Could the Customer list the standards, with their editions, that apply to the bogie?",
+  "Proposed wording": "The bogie shall comply with [TBC: list of standards with editions].",
+  "Confidence": "Haute"
+ },
+ {
+  "ID": "CUS-018",
+  "Verdict": "OK",
+  "Severity": "",
+  "Rules": "",
+  "Dismissed signals": "VER-03",
+  "Excerpt": "",
+  "Explication": "Ensemble fini d'écrans, vérifiable par inspection.",
+  "Question client": "",
+  "Proposed wording": "",
+  "Confidence": "Haute"
+ }
+]
+```
